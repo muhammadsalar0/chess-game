@@ -73,10 +73,10 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    width: 160px;
-    height: 160px;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5); /* Reduced shadow for smaller board */
-    border: 4px solid #1e293b; /* Reduced border for smaller board */
+    width: 580px;
+    height: 580px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 8px solid #1e293b;
     border-radius: 4px;
 }
 
@@ -107,8 +107,8 @@ header h1 {
 
 .square.valid-move::after {
     content: '';
-    width: 8px;
-    height: 8px;
+    width: 20px;
+    height: 20px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
@@ -125,7 +125,7 @@ header h1 {
 }
 
 .piece:hover {
-    transform: scale(1.08) translateY(-2px);
+    transform: scale(1.08) translateY(-5px);
 }
 
 /* Piece Textures */
